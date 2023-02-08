@@ -1,8 +1,9 @@
 import React from 'react'
+import "./Highlights.css"
 
 const Highlights = () => {
   return (
-    <div>Highlights</div>
+    <div className="hightlights_main">Highlights</div>
   )
 }
 
