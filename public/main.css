@@ -1,9 +1,10 @@
 .main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 100px);
+  grid-template-rows: repeat(auto, 100px);
   column-gap: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 35px89i;
   height: 150vh;
+  background-color: blue;
 }
+

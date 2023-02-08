@@ -1,0 +1,5 @@
+.about_main {
+  background-color: red;
+  grid-column: 1 / span 12;
+  grid-row: 17 / span 5;
+}
