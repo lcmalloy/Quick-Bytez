@@ -1,19 +1,12 @@
 .navbar_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   flex: 1;
   margin: auto;
 }
 
-.navbar_main > ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-ul > li {
-  text-decoration: none;
-  list-style: none;
-}
-
-li > a {
+a {
   text-decoration: none;
   color: black;
   transition: color 0.8s ease;
