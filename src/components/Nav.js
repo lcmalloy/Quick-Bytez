@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Nav.css"
+import "../styles/Nav.css"
 
 const Nav = () => {
   return (
