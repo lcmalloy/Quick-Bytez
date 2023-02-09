@@ -3,3 +3,62 @@
   grid-column: 1/ span 12;
   grid-row: 2/ span 5;
 }
+
+.hero_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero_content {
+  width: 60%;
+}
+
+.heading {
+  margin-bottom: 0;
+}
+
+.subheading {
+  margin-top: 0;
+}
+
+.btn1 {
+  border-radius: 30px;
+  border-style: none;
+  background-color: #f4ce14;
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.hero_img_container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  grid-column: 2;
+}
+
+.hero_image {
+  width: 60%;
+  height: auto;
+  max-height: 800px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .hero_image {
+    display: none;
+  }
+
+  .hero_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .btn1 {
+    font-size: .8em;
+  }
+}

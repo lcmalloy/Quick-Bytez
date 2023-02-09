@@ -1,6 +1,6 @@
 .testimonials_main {
   background-color: grey;
   grid-column: 1/ span 12;
-  grid-row: 12/ span 5;
+  grid-row: auto;
 
 }
