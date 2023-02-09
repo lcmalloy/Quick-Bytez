@@ -7,7 +7,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header_main">
-      <img className="logo_img" src={Logo} alt="logo"/>
+      <img className="logo_img logo" src={Logo} alt="logo"/>
       <Nav />
     </div>
   )

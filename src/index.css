@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Markazi Text', serif;
+  src: url(fonts/MarkaziText-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Karla', sans-serif;
+  src: url(fonts/Karla-VariableFont_wght.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,4 +24,26 @@ code {
 
 html body {
   height: 100%;
+}
+
+
+a {
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.3em;
 }

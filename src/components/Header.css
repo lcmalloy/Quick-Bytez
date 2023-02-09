@@ -6,4 +6,13 @@
 
 .logo_img {
   margin: auto;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .logo_img {
+    width: 30%;
+    height: auto;
+    min-width: 140px;
+  }
 }
