@@ -1,0 +1,8 @@
+.card-testimonial {
+  border: 1px solid black;
+  width: 20em;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+}

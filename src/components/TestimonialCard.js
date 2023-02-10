@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/TestimonialCard.css'
 
 const TestimonialCard = (props) => {
   return (

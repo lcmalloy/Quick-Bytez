@@ -1,6 +1,11 @@
 .testimonials_main {
   background-color: #EDEFEE;
   grid-column: 1/ span 12;
-  grid-row: auto;
+  grid-row: auto/ span 7;
+}
 
+.testimonial_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
