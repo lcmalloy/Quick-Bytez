@@ -10,6 +10,7 @@
 }
 
 .hero_content {
+  margin-top: 50px;
   width: 60%;
 }
 
@@ -19,15 +20,6 @@
 
 .subheading {
   margin-top: 0;
-}
-
-.btn1 {
-  border-radius: 30px;
-  border-style: none;
-  background-color: #f4ce14;
-  font-size: 1em;
-  margin-top: 1em;
-  padding: 1em;
 }
 
 .hero_img_container {
