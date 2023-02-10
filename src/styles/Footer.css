@@ -1,5 +1,5 @@
 .footer_main {
-  background-color: green;
+  background-color: #EDEFEE;
   grid-column: 1 / span 12;
   grid-row: auto;
 }
