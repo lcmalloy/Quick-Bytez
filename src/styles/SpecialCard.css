@@ -1,0 +1,43 @@
+.card-specials {
+  height: 80%;
+  width: 300px;
+  border: 1px solid black;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin: 20px;
+}
+
+.card-specials > img {
+  border: 1px solid black;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.title {
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.price {
+  margin-right: 20px;
+}
+
+.card-info-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-text {
+  width: 80%;
+  padding: 15px;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.card-action {
+  margin-left: 20px;
+  margin-top: 15px;
+}
