@@ -28,3 +28,36 @@
   flex-direction: column;
   align-items: center;
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.inline-b {
+  display: inline-block;
+}
+
+.inline-f {
+  display: inline-flex;
+}
+
+.m-auto {
+  margin: auto;
+}

@@ -1,0 +1,46 @@
+.card-testimonial {
+  border: 1px solid black;
+  width: 20em;
+  height: 400px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.profile {
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.img-sm {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.name {
+  position: relative;
+  bottom: 65px;
+  left: 22px;
+}
+
+.testimonial-description {
+   width: 80%;
+    height: 4em;
+    font-size: 1em;
+    margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+  .name {
+    position: static;
+    display: block;
+    margin-left: 20px;
+  }
+}
