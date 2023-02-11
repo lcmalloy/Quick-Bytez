@@ -6,13 +6,14 @@
   margin: auto;
 }
 
-a {
+.nav-link {
+  flex-basis: auto;
   text-decoration: none;
   color: black;
   transition: color 0.8s ease;
 }
 
-a:hover {
+.nav-link:hover {
   border-bottom: 1px solid;
   border-color: #495e57;
   color: #f4ce14;

@@ -1,5 +1,39 @@
 .footer_main {
   background-color: #EDEFEE;
   grid-column: 1 / span 12;
-  grid-row: auto;
+  grid-row: auto / span 6;
+  padding: 50px;
+}
+
+.grid-col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.foot-img-md {
+  width: 20vw;
+  border-radius: 16px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.nav_foot {
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-link {
+  margin-top: 10px;
+  flex-basis: auto;
+  text-decoration: none;
+  color: black;
+  transition: color .4s ease;
+}
+
+.foot-link:hover {
+  color: #f4ce14;
+}
+
+.foot-link:active {
+  color: #EE9972;
 }
