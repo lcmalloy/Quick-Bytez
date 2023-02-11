@@ -6,6 +6,7 @@
   border-top-right-radius: 16px;
   margin: 20px;
   background-color: #EDEFEE;
+  transition: transform 0.3s ease;
 }
 
 .card-specials > img {
@@ -41,4 +42,33 @@
 .card-action {
   margin-left: 20px;
   margin-top: 15px;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .card-specials::after, .card-specials::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+
+  .card-specials:hover {
+    transform: translate(-12px,-12px);
+  }
+
+  .card-specials:hover::after {
+    transform: translate(6px,6px);
+  }
+
+  .card-specials:hover::before {
+    transform: translate(12px,12px);
+  }
 }

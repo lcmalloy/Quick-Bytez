@@ -22,6 +22,15 @@
   color: #333333
 }
 
+.flex {
+  display: flex;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .flex-content {
   display: flex;
   flex: 1;
