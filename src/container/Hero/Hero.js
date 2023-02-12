@@ -1,22 +1,23 @@
 import React from 'react'
 import '../../styles/Hero.css'
 import '../../styles/Button.css'
-import heroImage from '../../assets/restauranfood.jpg'
 
-const Hero = () => {
+const Hero = (props) => {
 
   return (
     <div className="hero_main hero_grid">
       <div className="flex-content">
         <div className="hero_content">
-          <h1 className="primary2 heading">Little Lemon</h1>
-          <h2 className="secondary2 subheading">Chicago</h2>
-          <p className="secondary2">Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively but casual environment. The restaurant features a locally-sourced menu with daily specials.</p>
-          <button className="btn1-round" type="button" onClick={null}>Reserve a table</button>
+          <h1 className="primary2 heading">{props.hero.heading}</h1>
+          <h2 className="secondary2 subheading">{props.hero.sub}</h2>
+          <p className="secondary2">{props.hero.description}</p>
+          {props.hero.btn.active &&
+            <button className="btn1-round" type="button" onClick={null}>Reserve a table</button>
+          }
         </div>
       </div>
       <div className="hero_img_container">
-        <img src={heroImage} className="hero_image" alt="restaurant"/>
+        <img src={props.hero.img} className="hero_image" alt="restaurant"/>
       </div>
     </div>
   )
