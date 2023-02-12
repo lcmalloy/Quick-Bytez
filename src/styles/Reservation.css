@@ -1,0 +1,5 @@
+.booking-container {
+  background-color: red;
+  grid-column: 1 / span 12;
+  grid-row: auto / span 6;
+}
