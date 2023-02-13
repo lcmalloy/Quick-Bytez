@@ -4,7 +4,6 @@ import '../styles/SpecialCard.css'
 import { Link } from 'react-router-dom'
 
 const SpecialCard = (props) => {
-  console.log(props)
   return (
     <div className="card-specials">
       <img src={props.meal.img} alt={props.meal.alt}/>
