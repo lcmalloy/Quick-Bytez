@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Hero, Highlights, Testimonials, About, Footer } from '../../container/'
+import { Hero, Highlights, Testimonials, About } from '../../container/'
 import { hero_main } from '../../static/hero/hero_description'
 
 const Homepage = () => {
@@ -9,7 +9,6 @@ const Homepage = () => {
       <Highlights/>
       <Testimonials/>
       <About/>
-      <Footer/>
     </>
   )
 }

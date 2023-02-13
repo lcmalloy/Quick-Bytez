@@ -2,6 +2,7 @@
   border-radius: 30px;
   border-style: none;
   background-color: #f4ce14;
+  width: fit-content;
   font-size: 1em;
   margin-top: 1em;
   padding: 1em;
@@ -9,6 +10,7 @@
 
 .btn1-square {
   border-radius: 16px;
+  width: fit-content;
   border-style: none;
   background-color: #f4ce14;
   font-size: 1em;
