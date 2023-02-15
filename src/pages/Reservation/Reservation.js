@@ -1,9 +1,11 @@
 import React from 'react'
-import { useReducer } from 'react'
+import { useReducer, useEffect, useState } from 'react'
 import '../../styles/Reservation.css'
 import BookingForm from '../../components/BookingForm'
 import { hero_reservation } from '../../static/hero/hero_description'
 import { Hero } from '../../container/'
+import { fetchAPI, seededRandom } from '../../static/API/fetchAPI'
+import submitAPI from '../../static/API/submitAPI'
 
 const updateTimes = (availableTimes, action) => {
   return [
@@ -16,12 +18,18 @@ const updateTimes = (availableTimes, action) => {
   ];
 }
 
-const initializeTimes = [
+const initializeTimes =  [
   'Please select a date'
 ]
 
 const Reservation = () => {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
+
+  useEffect(() => {
+    const date = new Date();
+    console.log(fetchAPI(date))
+
+  },[])
 
   const handleSubmit = () => {
     console.log("Form submitted!")

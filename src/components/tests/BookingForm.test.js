@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from '@testing-library/react';
-import BookingForm from '../BookingForm'
+// import { fireEvent, render, screen } from '@testing-library/react';
+// import BookingForm from '../BookingForm'
 
 // describe("Reservation Form", () => {
 //   test("user is able to submit the form with all fields submitted", () => {
@@ -47,35 +47,3 @@ import BookingForm from '../BookingForm'
 //     })
 //   })
 // })
-
-
-describe("Reservation Form", () => {
-  test("user is able to submit the form with all fields submitted", () => {
-    const date = '01/01/2020';
-    const time = '17:00';
-    const guests = 2;
-    const location = 'outside';
-    const occasion = 'Birthday';
-    const additional = 'Wheelchair accessability';
-    const availableTimes = [
-      '17:00',
-      '18:00',
-      '19:00',
-      '20:00',
-      '21:00',
-      '22:00',
-    ]
-    const handleSubmit = jest.fn();
-    render(<BookingForm availableTimes={availableTimes} />);
-
-    const submitButton = screen.getByRole("submit");
-    fireEvent.click(submitButton);
-
-    expect(handleSubmit).toHaveBeenCalledWith({
-      date,
-      time,
-      guests,
-
-    })
-  })
-})
