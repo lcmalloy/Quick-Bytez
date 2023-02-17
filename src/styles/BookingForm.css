@@ -6,7 +6,7 @@
   min-width: 500px;
 }
 
-.res-date, .res-time, .res-guests, .res-location, .res-additionals {
+.res-date, .res-time, .res-guests, .res-location, .res-additionals, .res-name {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;

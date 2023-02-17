@@ -29,7 +29,7 @@ const testimonials = [
 const Testimonials = () => {
 
   let testimonial = testimonials.map((testimonial) =>
-    <TestimonialCard testimonial={testimonial}/>
+    <TestimonialCard key={testimonial.name} testimonial={testimonial}/>
   )
   return (
     <div className="testimonials_main">

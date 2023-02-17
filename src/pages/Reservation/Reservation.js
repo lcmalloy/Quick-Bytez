@@ -2,10 +2,12 @@ import React from 'react'
 import { useReducer, useEffect, useState } from 'react'
 import '../../styles/Reservation.css'
 import BookingForm from '../../components/BookingForm'
+import ConfirmedBooking from '../ConfirmedBooking/ConfirmedBooking'
 import { hero_reservation } from '../../static/hero/hero_description'
 import { Hero } from '../../container/'
-import { fetchAPI, seededRandom } from '../../static/API/fetchAPI'
+import { fetchAPI } from '../../static/API/fetchAPI'
 import submitAPI from '../../static/API/submitAPI'
+
 
 const updateTimes = (availableTimes, action) => {
   return [
@@ -18,21 +20,32 @@ const updateTimes = (availableTimes, action) => {
   ];
 }
 
-const initializeTimes =  [
+const initializeTimes = [
   'Please select a date'
 ]
 
 const Reservation = () => {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes)
+  const [date, setDate] = useState('');
+  const [availTimes, setAvailTimes] = useState(['Please select a date']);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+  const [data, setData] = useState({})
+
 
   useEffect(() => {
-    const date = new Date();
-    console.log(fetchAPI(date))
+    if (date) {
+      let currentDate = new Date(date);
+      setAvailTimes(fetchAPI(currentDate));
+      console.log(availTimes);
+    }
+  },[date])
 
-  },[])
-
-  const handleSubmit = () => {
+  const handleSubmit = (updateData) => {
     console.log("Form submitted!")
+    console.log(updateData);
+    submitAPI(updateData);
+    setData(updateData);
+    setIsFormSubmitted(!isFormSubmitted);
   };
 
   return (
@@ -40,7 +53,11 @@ const Reservation = () => {
       <Hero hero={ hero_reservation }/>
       <div className="booking-container">
         <h1>Reservation</h1>
-        <BookingForm availableTimes={availableTimes} dispatch={dispatch} handleSubmit={handleSubmit}/>
+        { isFormSubmitted ?
+        <ConfirmedBooking data={data}/>
+          :
+          <BookingForm availableTimes={availableTimes} dispatch={dispatch} handleSubmit={handleSubmit} setDate={setDate} availTimes={availTimes}/>
+        }
       </div>
     </>
   )

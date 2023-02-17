@@ -1,8 +1,10 @@
 import React from 'react'
 import '../../styles/Hero.css'
 import '../../styles/Button.css'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = (props) => {
+  const navigate = useNavigate();
 
   return (
     <div className="hero_main hero_grid">
@@ -12,7 +14,13 @@ const Hero = (props) => {
           <h2 className="secondary2 subheading">{props.hero.sub}</h2>
           <p className="secondary2">{props.hero.description}</p>
           {props.hero.btn.active &&
-            <button className="btn1-round" type="button" onClick={null}>Reserve a table</button>
+            <button
+            className="btn1-round"
+            type="button"
+            onClick={() => {navigate("/Reservation")}}
+            >
+              Reserve a table
+            </button>
           }
         </div>
       </div>

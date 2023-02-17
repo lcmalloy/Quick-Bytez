@@ -38,14 +38,14 @@
 .about-img1 {
   position: absolute;
   right: 10vw;
-  bottom: -1200px;
+  bottom: -990px;
   transition: transform 0.3s ease;
 }
 
 .about-img2 {
   position: absolute;
   right: 20vw;
-  bottom: -1380px;
+  bottom: -1200px;
   transition: transform 0.3s ease;
 }
 

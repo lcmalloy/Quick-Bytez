@@ -5,6 +5,7 @@ import '../styles/BookingForm.css'
 
 const BookingForm = (props) => {
   const [form, setForm] = useState({
+    name: '',
     date: '',
     time: '',
     guests: 1,
@@ -15,28 +16,45 @@ const BookingForm = (props) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    props.handleSubmit([form.date, form.time, form.guests, form.location, form.occasion, form.additional])
+    props.handleSubmit(form)
   };
 
-  const availableTime = props.availableTimes.map((availableTime, i) =>
-    <option key={i}>{availableTime}</option>
+  const availableTime = props.availTimes.map((availableTime, i) =>
+    <option key={i} required>{availableTime}</option>
   )
 
   return (
     <>
       <form className="bookingForm-main" onSubmit={handleFormSubmit}>
+        <div className="res-name">
+          <label htmlFor="res-name">Please provide name</label>
+          <input
+            type="text"
+            id="res-name"
+            required minlength="2"
+            maxlength="50"
+            onChange={e => {
+              setForm({
+                ...form,
+                name: e.target.value
+              })
+            }}
+          />
+        </div>
         <div className="res-date">
           <label htmlFor="res-date">Please select a date</label>
           <input
             type="date"
             id="res-date"
+            required
             value={form.date}
             onChange={e => {
               setForm({
                 ...form,
                 date: e.target.value
               });
-              props.dispatch({type:form.date})
+              props.dispatch({type:'date'})
+              props.setDate(form.date);
             }}
             />
         </div>
@@ -63,6 +81,7 @@ const BookingForm = (props) => {
             max="10"
             id="guests"
             value={form.guests}
+            required
             onChange={e => {
               setForm({
                 ...form,
@@ -115,6 +134,7 @@ const BookingForm = (props) => {
                 })
               }}
             >
+              <option>None</option>
               <option>Birthday</option>
               <option>Anniversary</option>
             </select>

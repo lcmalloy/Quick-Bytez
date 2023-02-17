@@ -6,6 +6,7 @@
   font-size: 1em;
   margin-top: 1em;
   padding: 1em;
+  transition: all .5s ease;
 }
 
 .btn1-square {
@@ -16,4 +17,16 @@
   font-size: 1em;
   margin-top: 1em;
   padding: 1em;
+  transition: all .5s ease;
+}
+
+
+.btn1-round:hover, .btn1-square:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn1-round:active, .btn1-square:active {
+  background-color: #595959;
+  color: rgb(255, 255, 255);
 }

@@ -6,6 +6,8 @@ import SaladImg from '../../assets/greek salad.jpg'
 import BruchettaImg from '../../assets/bruchetta.svg'
 import LemonDessertImg from '../../assets/lemon dessert.jpg'
 
+import {useNavigate} from 'react-router-dom'
+
 
 const specials = [
   {
@@ -32,15 +34,22 @@ const specials = [
 ]
 
 const Highlights = () => {
+  const navigate = useNavigate();
 
   const special = specials.map((meal) =>
-    <SpecialCard meal={meal} />
+    <SpecialCard key={meal.name} meal={meal} />
   )
   return (
     <div className="hightlights_main">
       <div className="highlight-heading">
         <h2>This weeks specials</h2>
-        <button type="button" className="btn1-square">Online Menu</button>
+        <button
+        type="button"
+        className="btn1-square"
+        onClick={() => {navigate('/Menu')}}
+        >
+          Online Menu
+        </button>
       </div>
       <div className="container-special">
         {special}
