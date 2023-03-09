@@ -1,6 +1,6 @@
-# Little Lemon Restaurant App
+# Quick Lemon Restaurant App
 
-Little Lemon is a restaurant business with a focus towards providing users with information about their current dishes, as well as providing available reservations. Website focuses mainly on the Main and Reservation Page.
+Quick Lemon (Little Lemon) is a restaurant business with a focus towards providing users with information about their current dishes, as well as providing available reservations. Website focuses mainly on the Main and Reservation Page.
 
 
 #Demo of website features
