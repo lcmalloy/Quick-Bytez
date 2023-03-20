@@ -56,4 +56,4 @@ environment should open to Mainpage of restaurant website.
 
 ## Authors
 
-* **Lawrence Malloy** - *Initial work* - [LittleLemon](https://github.com/lcmalloy/Little-Lemon-Capstone)
+* **Lawrence Malloy** - *Initial work* - [Quick Bytez](https://github.com/lcmalloy/Quick-Bytez)
