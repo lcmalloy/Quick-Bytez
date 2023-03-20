@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Quick-Bytez/static/css/main.671c1918.css",
+    "main.js": "/Quick-Bytez/static/js/main.85737443.js",
+    "static/media/profile1.jpg": "/Quick-Bytez/static/media/profile1.18e045e17b6b222850ee.jpg",
+    "static/media/profile3.jpg": "/Quick-Bytez/static/media/profile3.2f89587bd8fd59b8c9f5.jpg",
+    "static/media/profile2.jpg": "/Quick-Bytez/static/media/profile2.990bf8344d8845fea242.jpg",
+    "static/media/greek salad.jpg": "/Quick-Bytez/static/media/greek salad.cf3ee6fa3fcfc2078ee1.jpg",
+    "static/media/Mario and Adrian A.jpg": "/Quick-Bytez/static/media/Mario and Adrian A.231c30a98e35e9355b3a.jpg",
+    "static/media/Mario and Adrian b.jpg": "/Quick-Bytez/static/media/Mario and Adrian b.eede16656c1b65dcf420.jpg",
+    "static/media/restaurant.jpg": "/Quick-Bytez/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/MarkaziText-VariableFont_wght.ttf": "/Quick-Bytez/static/media/MarkaziText-VariableFont_wght.ab5c6a62488a17ed6c60.ttf",
+    "static/media/bruschetta.jpg": "/Quick-Bytez/static/media/bruschetta.d5ed3153f716fa5f8404.jpg",
+    "static/media/header1.jpeg": "/Quick-Bytez/static/media/header1.ec4b59f5c8cf276a2ec4.jpeg",
+    "static/media/Karla-VariableFont_wght.ttf": "/Quick-Bytez/static/media/Karla-VariableFont_wght.e7cdc609f35daffcb788.ttf",
+    "static/media/logo.svg": "/Quick-Bytez/static/media/logo.6a897a7ae9b1ac357ab75749a3ccf7ff.svg",
+    "index.html": "/Quick-Bytez/index.html",
+    "main.671c1918.css.map": "/Quick-Bytez/static/css/main.671c1918.css.map",
+    "main.85737443.js.map": "/Quick-Bytez/static/js/main.85737443.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.671c1918.css",
+    "static/js/main.85737443.js"
+  ]
+}
