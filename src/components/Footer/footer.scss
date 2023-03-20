@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.container__footer{
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  background: $color-bg-variant;
+  width: 100%;
+  padding: 5rem;
+
+  .container__footer-img{
+    height: 20rem;
+    width: 25rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+
+  .container__footer-nav{
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $color-white;
+      transition: $transition;
+    }
+
+    a:hover{
+      color: $color-primary;
+    }
+  }
+}

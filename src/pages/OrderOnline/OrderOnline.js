@@ -2,7 +2,7 @@ import React from 'react'
 
 const OrderOnline = () => {
   return (
-    <div>OrderOnline</div>
+    <div>Demo Site: Page will be implemented at a later time</div>
   )
 }
 

@@ -1,0 +1,76 @@
+@import '../../index.scss';
+
+header {
+  height: 65vh;
+  padding-top: 8rem;
+
+  .header__container {
+    text-align: center;
+    width: 100vw;
+
+    .header__banner{
+      display: grid;
+      grid-template-columns: 45% 45%;
+      gap: 10%;
+      background: $color-bg-variant;
+      width: 100%;
+      height: 30rem;
+
+      .header__banner-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2rem;
+      }
+      .header__banner-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .container__banner-img {
+          height: 20rem;
+          width: 30rem;
+          margin-right: 2rem;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+  header {
+    .header__container{
+      .header__banner{
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+
+        .header__banner-details{
+          padding-bottom: 2rem;
+          p {
+            display: none;
+          }
+        }
+        .header__banner-img {
+          .container__banner-img {
+            width: 100%;
+            margin-right: 0;
+
+            img {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

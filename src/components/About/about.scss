@@ -1,0 +1,28 @@
+.about__container {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  gap: 10%;
+
+  .about__details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .about__images {
+    height: 30rem;
+    width: 40rem;
+    display: flex;
+    gap: 4rem;
+
+    img {
+      border-radius: 20px;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
