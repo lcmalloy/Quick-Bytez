@@ -57,7 +57,7 @@ const Reservation = () => {
           <BookingForm availableTimes={availableTimes} dispatch={dispatch} handleSubmit={handleSubmit} setDate={setDate} availTimes={availTimes}/>
           }
         </div>
-        <Link to="/">Return to Home</Link>
+        <Link to="Quick-Bytez/">Return to Home</Link>
       </div>
     </section>
   )

@@ -57,24 +57,3 @@ const Highlights = () => {
 }
 
 export default Highlights
-
-
-/*
-div className="highlight-heading">
-        <h2>This weeks specials</h2>
-        <button
-        type="button"
-        className="btn1-square"
-        onClick={() => {navigate('/Menu')}}
-        >
-          Online Menu
-        </button>
-      </div>
-      <div className="container-special">
-        {special}
-      </div>
-
-
-
-
-*/

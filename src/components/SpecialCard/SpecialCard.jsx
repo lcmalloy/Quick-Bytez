@@ -18,7 +18,7 @@ const SpecialCard = (props) => {
           <p>{props.meal.description}</p>
         </div>
         <div className="specials__CTA">
-          <Link to="/OrderOnline" className="specials__CTA-link"> Order a Delivery</Link>
+          <Link to="Quick-Bytez/OrderOnline" className="specials__CTA-link"> Order a Delivery</Link>
         </div>
       </div>
     </article>

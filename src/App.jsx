@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <Routes>
-        <Route exact path='/' element={<Homepage />} />
-        <Route path='/Menu' element={<Menu />} />
-        <Route path='/Reservation' element={<Reservation />} />
-        <Route path='/OrderOnline' element={<OrderOnline />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/Login' element={<Login />} />
+        <Route exact path='Quick-Bytez/' element={<Homepage />} />
+        <Route path='Quick-Bytez/Menu' element={<Menu />} />
+        <Route path='Quick-Bytez/Reservation' element={<Reservation />} />
+        <Route path='Quick-Bytez/OrderOnline' element={<OrderOnline />} />
+        <Route path='Quick-Bytez/About' element={<About />} />
+        <Route path='Quick-Bytez/Login' element={<Login />} />
       </Routes>
     </>
   );
