@@ -17,6 +17,8 @@
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
   .testimonials__container {
+    height:fit-content;
+    margin-bottom: 5rem;
     .cards__container {
       grid-template-columns: 1fr 1fr;
     }

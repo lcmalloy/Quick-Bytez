@@ -2,7 +2,7 @@
   height: 60vh;
   display: grid;
   grid-template-columns: 20% 70%;
-  gap: 10%;
+  gap: 10rem;
 
   .about__details {
     text-align: center;
@@ -25,4 +25,23 @@
       object-fit: cover;
     }
   }
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+    .about__container {
+      height: fit-content;
+      margin-bottom: 5rem;
+      gap: 10rem;
+
+      .about__images {
+        height: 15rem;
+        width: 20rem;
+        flex-direction: column;
+      }
+    }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
 }

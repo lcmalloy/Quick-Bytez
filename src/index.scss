@@ -44,7 +44,6 @@ body {
 /* ============= STYLES ============= */
 
 .container {
-  width: $container-width-lg;
   margin: 0 auto;
 }
 
@@ -93,7 +92,7 @@ a, p {
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
   .container {
-    width: $container-width-md;
+    padding: 2rem;
   }
 
   section {
@@ -105,9 +104,7 @@ a, p {
 /* =========== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {
   .container {
-    width: $container-width-sm;
     height: fit-content;
-    margin-bottom: 10rem;
   }
 
   section {
