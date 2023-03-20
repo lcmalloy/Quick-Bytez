@@ -1,4 +1,3 @@
-import './App.css';
 import { Homepage, Menu, Reservation, OrderOnline, Login, About } from './pages/'
 
 import { Routes, Route } from 'react-router-dom'
