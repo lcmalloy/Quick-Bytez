@@ -11,7 +11,8 @@ nav {
   gap: 0.8rem;
   backdrop-filter: blur(15px);
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 20% 80%;
+  padding-right: 2rem;
 
   .navbar__logo {
     height: 5rem;
@@ -26,7 +27,7 @@ nav {
   .navbar__links {
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     // padding-top: 1rem;
 

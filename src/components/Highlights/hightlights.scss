@@ -2,7 +2,7 @@
 
 .highlights__container {
   height: fit-content;
-  padding-bottom: 12rem;
+  padding: 0 0 12rem 0;
 
   .highlights__container-meals {
     margin-top: 5rem;
@@ -20,14 +20,13 @@
   gap: 12rem;
   align-items: center;
   justify-content: center;
+  padding-top: 10rem;
 }
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
-  .highlights__container {
-    .highlights__container-meals {
-      grid-template-columns: 1fr 1fr;
-    }
+  .highlights__container-meals {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -38,9 +37,7 @@
     gap: 1rem;
   }
 
-  .highlights__container {
-    .highlights__container-meals {
-      grid-template-columns: 1fr;
-    }
+  .highlights__container-meals {
+    grid-template-columns: 1fr;
   }
 }
