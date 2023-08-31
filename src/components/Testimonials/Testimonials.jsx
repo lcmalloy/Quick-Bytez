@@ -31,11 +31,11 @@ const Testimonials = () => {
 
   return (
     <section>
-      <div className="container testimonials__container">
+      <div className="testimonials__container">
         <h2>Testimonials</h2>
-        {/* <div className="cards__container">
+        <div className="cards__container">
           {testimonials.map((testimonial) => <TestimonialCard key={testimonial.name} testimonial={testimonial}/>)}
-        </div> */}
+        </div>
       </div>
     </section>
   )

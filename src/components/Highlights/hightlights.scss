@@ -2,14 +2,13 @@
 
 .highlights__container {
   height: fit-content;
-  padding: 0 0 12rem 0;
 
   .highlights__container-meals {
-    margin-top: 5rem;
-    border: 1px solid $color-primary-variant;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    border: 1px solid $color-primary-variant;
+    margin-top: 5rem;
     padding: 2rem;
     min-width: 20rem;
   }

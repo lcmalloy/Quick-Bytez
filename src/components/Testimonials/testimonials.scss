@@ -1,15 +1,16 @@
 @import '../../index.scss';
 
 .testimonials__container {
-  height: 75vh;
   text-align: center;
+  margin-top: 5rem;
 
   .cards__container {
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     height: fit-content;
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
 }
 
