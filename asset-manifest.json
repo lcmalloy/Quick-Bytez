@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Quick-Bytez/static/css/main.a21dbaa2.css",
-    "main.js": "/Quick-Bytez/static/js/main.1c7cf7b9.js",
+    "main.css": "/Quick-Bytez/static/css/main.24730d1e.css",
+    "main.js": "/Quick-Bytez/static/js/main.dc0c6343.js",
     "static/media/profile1.jpg": "/Quick-Bytez/static/media/profile1.18e045e17b6b222850ee.jpg",
     "static/media/profile3.jpg": "/Quick-Bytez/static/media/profile3.2f89587bd8fd59b8c9f5.jpg",
     "static/media/profile2.jpg": "/Quick-Bytez/static/media/profile2.990bf8344d8845fea242.jpg",
@@ -13,13 +13,13 @@
     "static/media/bruschetta.jpg": "/Quick-Bytez/static/media/bruschetta.d5ed3153f716fa5f8404.jpg",
     "static/media/header1.jpeg": "/Quick-Bytez/static/media/header1.ec4b59f5c8cf276a2ec4.jpeg",
     "static/media/Karla-VariableFont_wght.ttf": "/Quick-Bytez/static/media/Karla-VariableFont_wght.e7cdc609f35daffcb788.ttf",
-    "static/media/logo.svg": "/Quick-Bytez/static/media/logo.6a897a7ae9b1ac357ab75749a3ccf7ff.svg",
+    "static/media/Logo.svg": "/Quick-Bytez/static/media/Logo.6a897a7ae9b1ac357ab75749a3ccf7ff.svg",
     "index.html": "/Quick-Bytez/index.html",
-    "main.a21dbaa2.css.map": "/Quick-Bytez/static/css/main.a21dbaa2.css.map",
-    "main.1c7cf7b9.js.map": "/Quick-Bytez/static/js/main.1c7cf7b9.js.map"
+    "main.24730d1e.css.map": "/Quick-Bytez/static/css/main.24730d1e.css.map",
+    "main.dc0c6343.js.map": "/Quick-Bytez/static/js/main.dc0c6343.js.map"
   },
   "entrypoints": [
-    "static/css/main.a21dbaa2.css",
-    "static/js/main.1c7cf7b9.js"
+    "static/css/main.24730d1e.css",
+    "static/js/main.dc0c6343.js"
   ]
 }
