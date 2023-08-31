@@ -1,19 +1,18 @@
 @import '../../index.scss';
 
 .container__footer{
-  height: 40vh;
   display: grid;
   grid-template-columns: 30% 60%;
   gap: 4rem;
   background: $color-bg-variant;
-  padding: 5rem;
+  padding: 5rem 0 5rem 2rem;
 
   .container__footer-img{
     height: 20rem;
-    width: 25rem;
+    width: auto;
 
     img {
-      height: 100%;
+      height: auto;
       width: 100%;
       object-fit: cover;
       border-radius: 20px;
@@ -43,9 +42,11 @@
 @media screen and (max-width: 1024px) {
   .container__footer{
     grid-template-columns: 1fr;
+    padding: 2rem 0 2rem 1rem;
 
     .container__footer-img{
-      width:100%;
+      display: flex;
+      width: 100%;
     }
 
     .container__footer-content{
@@ -58,5 +59,20 @@
 
 /* =========== MEDIA QUERIES (SMALL DEVICES) =============== */
 @media screen and (max-width: 600px) {
+  .container__footer-img {
+    display: none;
+  }
 
+  .container__footer-content{ 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: none !important;
+  }
+
+  .container__footer-nav, .container__footer-socials, .container__footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 }

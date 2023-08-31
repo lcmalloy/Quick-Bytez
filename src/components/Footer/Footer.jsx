@@ -7,7 +7,7 @@ import './footer.scss'
 const Footer = () => {
   return (
     <section>
-      <div className="container container__footer">
+      <div className="container__footer">
         <div className="container__footer-img">
           <img src={Restaurant} alt="" />
         </div>
