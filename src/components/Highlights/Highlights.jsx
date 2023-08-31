@@ -41,15 +41,15 @@ const Highlights = () => {
   )
   return (
     <section>
-      <div className="container highlights__container">
+      <div className="highlights__container">
         <div className="highlights__meals">
           <div className="highlights__CTA">
             <h2>This Weeks Specials</h2>
             <button className="btn btn-primary" onClick={() => navigate('/menu')}>Online Menu</button>
           </div>
-          {/* <div className="highlights__container-meals">
+          <div className="highlights__container-meals">
             {special}
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
